@@ -1,3 +1,14 @@
+覚えておくと便利なカルーセル
+★設定項目	　　　説明	設定値
+★autoplay	　　　画像を自動的に切り替えるかどうか　　　　　　　　　　　	true（自動的に切り替える）またはfalse（自動的に切り替えない）
+★autoplaySpeed	　次の画像に切り替えるまでの待ち時間	　　　　　　　　　　ミリ秒（1000分の1秒）
+★arrows	　　　画像を手動で切り替えるための矢印ボタンを表示するか　　	true（表示）またはfalse（非表示）
+★dots	　　　　「現在何枚目の画像を表示しているか」を示すUI（ドット）を表示するか	true（表示）またはfalse（非表示）
+★fade	　　　　画像の切り替え時にフェード（徐々に透明／不透明になるアニメーション）させるかどうか	true（フェードさせる）またはfalse（スライドさせる）
+★infinite	　　画像をループさせるかどうか（1→2→3→1→2→3......）	true（ループさせる）またはfalse（ループさせない）
+★speed	　　　　画像の切り替え時のアニメーション速度	ミリ秒（1000分の1秒）
+★swipe	　　　　スワイプ操作による画像の切り替えを有効にするかどうか	true（有効）またはfalse（無効）
+
 HTMLに記述
     <!-- slickの読み込み -->
      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -13,19 +24,26 @@ HTMLに記述
 </body>
 --------------------------------------------------------
 ★メインビジュアルをこのように編集する
+★aタグで、画像をクリックすると指定ページへ飛ぶ
       <!-- カルーセル -->
       <section id="carousel-section">
-         <div class="carousel">
-           <div>
-             <img class="carouselImg" src="images/carousel1.png">
-           </div>
-           <div>
-             <img class="carouselImg" src="images/carousel2.png">
-           </div>
-           <div>
-             <img class="carouselImg" src="images/carousel3.png">
-           </div>
-         </div>
+        <div class="carousel">
+          <div>
+            <a href="index.html">
+              <img class="carouselImg" src="img/star-big.jpg">
+            </a>
+          </div>
+          <div>
+            <a href="works-1.html">
+              <img class="carouselImg" src="img/star.jpg">
+            </a>
+          </div>
+          <div>
+            <a href="works-2.html">
+              <img class="carouselImg" src="img/star4.jpg">
+            </a>
+          </div>
+        </div>
       </section>
 ------------------------------------------------------------
 jsにこちらを記述
@@ -58,6 +76,17 @@ $(function () {
   });
 
 });
+--------------------------------------------
+CSSのPC用とモバイル用に画像を調整
+/* PC用カルーセル設定 */
+.carousel {
+  margin: 0 20px 0 20px;
+}
+  
+.carouselImg {
+  width: 100%;
+}
+------------------------------------
 
 
 

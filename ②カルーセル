@@ -1,0 +1,29 @@
+HTMLに記述
+    <!-- slickの読み込み -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  </head>
+  -----------------------------------------
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <!-- slickの読み込み -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+--------------------------------------------------------
+★メインビジュアルをこのように編集する
+      <!-- カルーセル -->
+      <section id="carousel-section">
+         <div class="carousel">
+           <div>
+             <img class="carouselImg" src="images/carousel1.png">
+           </div>
+           <div>
+             <img class="carouselImg" src="images/carousel2.png">
+           </div>
+           <div>
+             <img class="carouselImg" src="images/carousel3.png">
+           </div>
+         </div>
+      </section>
